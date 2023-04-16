@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0b2434;
+  font-family: "Karla", sans-serif;
+}
+
+main {
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  height: 95vh;
+  width: 95%;
+  border-radius: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+.die__container {
+  display: grid;
+  grid-template: auto auto/ repeat(5, 1fr);
+  gap: 20px;
+}
+
+.die {
+  width: 50px;
+  height: 50px;
+  box-shadow: 2px 2px 5px black;
+  border-radius: 10%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.die__number {
+  font-size: 2rem;
+}
+
+.roll-dice {
+  height: 50px;
+  width: 100px;
+  border: none;
+  border-radius: 6px;
+  background-color: #5035ff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: "Karla", sans-serif;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.roll-dice:focus {
+  outline: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
