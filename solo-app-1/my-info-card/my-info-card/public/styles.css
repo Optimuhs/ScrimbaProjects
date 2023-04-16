@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Inter", sans-serif;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fs-content: 0.8em;
+
+  --clr-email: rgba(255, 255, 255, 1);
+  --clr-linkedIn: rgba(80, 147, 226, 1);
+  --clr-sections: rgba(26, 27, 33, 1);
+  --clr-footer: rgba(22, 22, 25, 1);
+}
+
+body {
+  font-family: var(--ff-primary);
+}
+
+.card {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-sections);
+  color: var(--clr-email);
+  border-radius: 10px;
+}
+
+.card--image {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.card--titles {
+  display: flex;
+  padding-top: 1.5em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card--titles > h1 {
+  font-weight: var(--fw-bold);
+  font-size: 1.5em;
+}
+.card--titles > h3 {
+  font-size: 1.1em;
+  padding-top: 0.1em;
+}
+.card--titles > h5 {
+  font-size: 0.7em;
+  padding-top: 0.5em;
+}
+
+.card--titles__buttons {
+  display: flex;
+  gap: 1em;
+  padding-top: 0.8em;
+}
+
+.button--email,
+.button--linkedIn {
+  display: flex;
+  width: 115px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.button--email:hover,
+.button--linkedIn:hover {
+  background-color: grey;
+}
+a {
+  text-decoration: none;
+}
+
+.button--email > i,
+.button--linkedIn > i {
+  padding: 0;
+  margin: 0 5px;
+}
+
+.button--email {
+  background-color: var(--clr-email);
+  color: var(--clr-sections);
+}
+
+.button--linkedIn {
+  background-color: var(--clr-linkedIn);
+}
+
+.card--content {
+  padding: 1.5em 0.75em;
+}
+
+.card--interests > p,
+.card--about > p {
+  font-size: var(--fs-content);
+  padding-top: 0.3em;
+}
+
+.card--interests {
+  padding-top: 1em;
+}
+
+.card--footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: var(--clr-footer);
+  border-radius: 10px;
+}
+.fa-brands {
+  margin: 0.8em 1.1em;
+  padding: 10px;
+}
+
+.card--icons > .fa-brands:hover {
+  background-color: grey;
+}
